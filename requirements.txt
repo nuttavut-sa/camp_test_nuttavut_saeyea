@@ -1,0 +1,7 @@
+robotframework
+robotframework-jsonlibrary
+robotframework-requests
+robotframework-seleniumlibrary
+jsonpath-ng
+requests
+chromedriver

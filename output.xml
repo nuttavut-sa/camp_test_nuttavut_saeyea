@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2.dev1 (Python 3.14.0 on darwin)" generated="2026-01-16T17:38:06.627757" rpa="false" schemaversion="5">
+<suite id="s1" name="Themall" source="/Users/nuttavut.s/Documents/camp_test_nuttavut/testcases/themall.robot">
+<test id="s1-t1" name="Open Web Page" line="6">
+<kw name="Open The Mall Page" owner="index">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:06.743785" level="INFO">Opening browser 'chrome' to base url 'https://monline.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-16T17:38:06.743640" elapsed="3.058687"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-16T17:38:09.803795" elapsed="0.392377"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:10.206264" level="INFO">Current location is 'https://monline.com/'.</msg>
+<arg>${url}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2026-01-16T17:38:10.196676" elapsed="0.009669"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:06.743218" elapsed="3.463245"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:06.742877" elapsed="3.464521"/>
+</test>
+<test id="s1-t2" name="Click Category And check" line="9">
+<kw name="Check Category Beauty" owner="index">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css=.modal-custom-body</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:10.208197" elapsed="0.014440"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${buauty_hall}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:10.222766" elapsed="0.014189"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${buauty_hall}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-16T17:38:10.237098" elapsed="0.283312"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:10.521708" level="INFO">Clicking element '//img[@alt='Beauty Hall']'.</msg>
+<arg>${buauty_hall}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:10.521029" elapsed="3.255818"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${exit_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:13.778935" elapsed="0.468863"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${exit_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-01-16T17:38:14.248538" elapsed="0.015818"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:14.265209" level="INFO">Clicking element '//div[contains(@class,'popup_close')]//button[contains(@class,'button_close')]'.</msg>
+<arg>${exit_line}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:14.264825" elapsed="0.034112"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${fine_linename}</arg>
+<arg>${contain_buauty_hall}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2026-01-16T17:38:14.299062" elapsed="0.014842"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2026-01-16T17:38:14.314043" elapsed="0.366422"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${buauty_hall}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:14.680591" elapsed="0.019333"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:10.208022" elapsed="4.492044"/>
+</kw>
+<kw name="Check Category Women" owner="index">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css=.modal-custom-body</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:14.700660" elapsed="0.008561"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${women}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:14.709367" elapsed="0.010502"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${women}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-16T17:38:14.720031" elapsed="0.284086"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:15.005312" level="INFO">Clicking element '//img[@alt='Women']'.</msg>
+<arg>${women}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:15.004678" elapsed="0.070604"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${x_button_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:15.075459" elapsed="0.229672"/>
+</kw>
+<kw name="Check Line Opened" owner="index">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:15.305848" elapsed="0.018311"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>${contain_text_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2026-01-16T17:38:15.324318" elapsed="0.015618"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:15.340229" level="INFO">Clicking element '//img[@alt='Close']'.</msg>
+<arg>${x_button_line}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:15.340068" elapsed="0.034313"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${women}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:15.374498" elapsed="0.007234"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:15.305448" elapsed="0.076352"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:14.700417" elapsed="0.681409"/>
+</kw>
+<kw name="Check Category Men" owner="index">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css=.modal-custom-body</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:15.382119" elapsed="0.451545"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${men}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:15.833953" elapsed="0.017200"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${men}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-16T17:38:15.851348" elapsed="0.287783"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:16.140708" level="INFO">Clicking element '//img[@alt='Men']'.</msg>
+<arg>${men}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:16.139854" elapsed="0.060381"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${x_button_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:16.200516" elapsed="0.226368"/>
+</kw>
+<kw name="Check Line Opened" owner="index">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:16.427564" elapsed="0.019771"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>${contain_text_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2026-01-16T17:38:16.447627" elapsed="0.017093"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:16.465062" level="INFO">Clicking element '//img[@alt='Close']'.</msg>
+<arg>${x_button_line}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:16.464875" elapsed="0.032882"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${women}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:16.497915" elapsed="0.007140"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:16.427248" elapsed="0.077875"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:15.381976" elapsed="1.123176"/>
+</kw>
+<kw name="Check Category Sport Mall" owner="index">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css=.modal-custom-body</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:16.505433" elapsed="0.444976"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sport_mall}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:16.950709" elapsed="0.017586"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${sport_mall}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-16T17:38:16.968500" elapsed="0.284863"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:17.254726" level="INFO">Clicking element '//img[@alt='Sports']'.</msg>
+<arg>${sport_mall}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:17.253992" elapsed="0.055925"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${x_button_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:17.310074" elapsed="0.222177"/>
+</kw>
+<kw name="Check Line Opened" owner="index">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:17.532572" elapsed="0.007067"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>${contain_text_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2026-01-16T17:38:17.539749" elapsed="0.008690"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:17.548684" level="INFO">Clicking element '//img[@alt='Close']'.</msg>
+<arg>${x_button_line}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:17.548552" elapsed="0.031432"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${women}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:17.580241" elapsed="0.009507"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:17.532408" elapsed="0.057420"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:16.505290" elapsed="1.084564"/>
+</kw>
+<kw name="Check Category Power Mall" owner="index">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css=.modal-custom-body</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:17.590153" elapsed="0.454005"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${power_mall}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:18.044997" elapsed="0.017802"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${power_mall}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-16T17:38:18.062996" elapsed="0.277853"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:18.341566" level="INFO">Clicking element '//img[@alt='Power Mall']'.</msg>
+<arg>${power_mall}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:18.341179" elapsed="0.056972"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${x_button_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:18.398350" elapsed="0.231857"/>
+</kw>
+<kw name="Check Line Opened" owner="index">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:18.630842" elapsed="0.236924"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>${contain_text_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2026-01-16T17:38:18.868057" elapsed="0.016114"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:18.884614" level="INFO">Clicking element '//img[@alt='Close']'.</msg>
+<arg>${x_button_line}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:18.884368" elapsed="0.040323"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${women}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:18.924820" elapsed="0.007779"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:18.630509" elapsed="0.302164"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:17.590007" elapsed="1.342702"/>
+</kw>
+<kw name="Check Category Watch" owner="index">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css=.modal-custom-body</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:18.933020" elapsed="0.451569"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${watch}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:19.384849" elapsed="0.016958"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${watch}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-16T17:38:19.402007" elapsed="0.284210"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:19.687348" level="INFO">Clicking element '//img[@alt='Watch']'.</msg>
+<arg>${watch}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:19.686750" elapsed="0.057574"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${x_button_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:19.744478" elapsed="0.231692"/>
+</kw>
+<kw name="Check Line Opened" owner="index">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:19.976782" elapsed="0.014230"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>${contain_text_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2026-01-16T17:38:19.991204" elapsed="0.013310"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:20.004937" level="INFO">Clicking element '//img[@alt='Close']'.</msg>
+<arg>${x_button_line}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:20.004723" elapsed="0.036682"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${women}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:20.041528" elapsed="0.007347"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:19.976484" elapsed="0.072461"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:18.932863" elapsed="1.116113"/>
+</kw>
+<kw name="Check Category Kids Planet" owner="index">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css=.modal-custom-body</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:20.049284" elapsed="0.436932"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${kids}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:20.486355" elapsed="0.009928"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${kids}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-16T17:38:20.496412" elapsed="0.266740"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:20.763708" level="INFO">Clicking element '//img[@alt='Kids Planet']'.</msg>
+<arg>${kids}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:20.763363" elapsed="0.053963"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${x_button_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:20.817529" elapsed="0.225182"/>
+</kw>
+<kw name="Check Line Opened" owner="index">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:21.043113" elapsed="0.229862"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>${contain_text_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2026-01-16T17:38:21.273201" elapsed="0.015544"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:21.289230" level="INFO">Clicking element '//img[@alt='Close']'.</msg>
+<arg>${x_button_line}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:21.288957" elapsed="0.037970"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${women}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:21.327064" elapsed="0.011242"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:21.042910" elapsed="0.295469"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:20.049135" elapsed="1.289274"/>
+</kw>
+<kw name="Check Category Betrend" owner="index">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css=.modal-custom-body</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:21.338743" elapsed="0.432645"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${betrend}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:21.771545" elapsed="0.011104"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${betrend}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-16T17:38:21.782792" elapsed="0.270394"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:22.054782" level="INFO">Clicking element '//img[@alt='Betrend']'.</msg>
+<arg>${betrend}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:22.053954" elapsed="0.055465"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${x_button_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:22.109608" elapsed="0.231285"/>
+</kw>
+<kw name="Check Line Opened" owner="index">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:22.341510" elapsed="0.014162"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>${contain_text_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2026-01-16T17:38:22.355868" elapsed="0.014223"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:22.370447" level="INFO">Clicking element '//img[@alt='Close']'.</msg>
+<arg>${x_button_line}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:22.370250" elapsed="0.032543"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${women}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:22.402913" elapsed="0.006410"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:22.341207" elapsed="0.068176"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:21.338572" elapsed="1.070839"/>
+</kw>
+<kw name="Check Category The Living" owner="index">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css=.modal-custom-body</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:22.409713" elapsed="0.450938"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${the_living}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:22.860898" elapsed="0.018153"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${the_living}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-16T17:38:22.879235" elapsed="0.272791"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:23.152940" level="INFO">Clicking element '//img[@alt='The Living']'.</msg>
+<arg>${the_living}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:23.152397" elapsed="0.055442"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${x_button_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:23.208012" elapsed="0.233018"/>
+</kw>
+<kw name="Check Line Opened" owner="index">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:23.441631" elapsed="0.013886"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${find_line}</arg>
+<arg>${contain_text_line}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2026-01-16T17:38:23.455740" elapsed="0.014162"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:23.470334" level="INFO">Clicking element '//img[@alt='Close']'.</msg>
+<arg>${x_button_line}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:23.470118" elapsed="0.032058"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${women}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:23.502298" elapsed="0.006420"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:23.441332" elapsed="0.067446"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:22.409566" elapsed="1.099240"/>
+</kw>
+<kw name="Check Category Gourmet" owner="index">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css=.modal-custom-body</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:23.509116" elapsed="0.451410"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${gourmet}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:23.960815" elapsed="0.017275"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${gourmet}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-01-16T17:38:23.978290" elapsed="0.274847"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:24.254231" level="INFO">Clicking element '//img[@alt='Gourmet']'.</msg>
+<arg>${gourmet}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:24.253607" elapsed="1.281838"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${gourmet_menu}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:25.535650" elapsed="0.013591"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${language_th}</arg>
+<arg>${contain_lang_th}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2026-01-16T17:38:25.549361" elapsed="0.014001"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:23.508972" elapsed="2.054459"/>
+</kw>
+<status status="PASS" start="2026-01-16T17:38:10.207641" elapsed="15.355931"/>
+</test>
+<test id="s1-t3" name="Verify Language And Change Language" line="21">
+<kw name="Change Language" owner="index">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${language_button}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:25.564158" elapsed="0.008563"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:25.572998" level="INFO">Clicking element '//button[@data-bs-toggle='dropdown' and contains(@class,'btn-lang') and contains(@class,'tablet-none')]'.</msg>
+<arg>${language_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:25.572851" elapsed="0.042558"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${language_dd}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-16T17:38:25.615563" elapsed="0.009941"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:25.625746" level="INFO">Clicking element '//button[contains(@class,'change-locale') and contains(@class,'en')]'.</msg>
+<arg>${language_btn_en}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-16T17:38:25.625613" elapsed="0.227099"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<msg time="2026-01-16T17:38:36.406808" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-16T17:38:36.407436" level="FAIL">Element with locator '//span[normalize-space()='English']' not found.</msg>
+<arg>${language_en}</arg>
+<arg>${contain_lang_en}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="FAIL" start="2026-01-16T17:38:25.852823" elapsed="10.559835">Element with locator '//span[normalize-space()='English']' not found.</status>
+</kw>
+<status status="FAIL" start="2026-01-16T17:38:25.564035" elapsed="10.848921">Element with locator '//span[normalize-space()='English']' not found.</status>
+</kw>
+<status status="FAIL" start="2026-01-16T17:38:25.563776" elapsed="10.849455">Element with locator '//span[normalize-space()='English']' not found.</status>
+</test>
+<status status="FAIL" start="2026-01-16T17:38:06.628725" elapsed="29.785001"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Themall" id="s1" pass="2" fail="1" skip="0">Themall</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
