@@ -1,10 +1,8 @@
 *** Settings ***
-
 Library  SeleniumLibrary
 Resource  ../keyword/index.robot
 
 *** Test Cases ***
-
 Open Web Page
   Open The Mall Page
 
